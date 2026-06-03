@@ -25,8 +25,7 @@ services:
       - "3306:3306"
 
   two-tier-app:
-    build:
-      context: .
+    image: aman9048/two-tier-app:latest
     ports: 
       - "5000:5000"
     environment:
